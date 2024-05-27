@@ -1,0 +1,26 @@
+USED_CARS
+__________
+
+id                  -   UNSIGNED INT - PRIMARY_KEY (NOT NULL, UNIQUE) - AUTO_INCREMENT
+vin                 -   VARCHAR(17)  - NOT NULL - UNIQUE
+make                -   VARCHAR(255) - NOT NULL
+model               -   VARCHAR(255) - NOT NULL
+year                -   YEAR         - NOT NULL
+mileage_km          -   UNSIGNED INT - NOT NULL
+color               -   VARCHAR(50)
+body_type           -   VARCHAR(50)
+fuel_type           -   VARCHAR(50)
+engine_size_l       -   DECIMAL(3, 1) // 999.9 - NOT NULL
+transmission        -   VARCHAR(50)     - NOT NULL
+drive_type          -   VARCHAR(50)
+doors_number        -   TINYINT         - NOT NULL
+seats_number        -   TINYINT         - NOT NULL
+price               -   DECIMAL(10, 2) // 99999999.99 - NOT NULL
+discount_price      -   DECIMAL(10, 2) // 99999999.99
+description         -   MEDIUMTEXT
+available           -   TINYINT - NOT NULL
+listing_date        -   DATE    - NOT NULL
+thumbnail_image     -   TEXT    - DEFAULT("img/car-placeholder.jpg")
+dealer_name         -   VARCHAR(255)    - NOT NULL
+dealer_location     -   VARCHAR(255)
+warranty_months     -   UNSIGNED TINYINT
